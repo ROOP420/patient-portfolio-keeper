@@ -95,8 +95,18 @@ const HealthMetrics = () => {
                 margin={{ top: 5, right: 5, left: 0, bottom: 5 }}
               >
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f0f0f0" />
-                <XAxis dataKey="date" tick={{ fontSize: 10 }} />
-                <YAxis tick={{ fontSize: 10 }} width={30} />
+                <XAxis 
+                  dataKey="date" 
+                  tick={{ fontSize: 10 }} 
+                  axisLine={{ stroke: '#E2E8F0' }}
+                  tickLine={{ stroke: '#E2E8F0' }}
+                />
+                <YAxis 
+                  tick={{ fontSize: 10 }} 
+                  width={30} 
+                  axisLine={{ stroke: '#E2E8F0' }}
+                  tickLine={{ stroke: '#E2E8F0' }}
+                />
                 <Tooltip content={<CustomTooltip />} />
                 <Line 
                   type="monotone" 
@@ -130,8 +140,18 @@ const HealthMetrics = () => {
                 margin={{ top: 5, right: 5, left: 0, bottom: 5 }}
               >
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f0f0f0" />
-                <XAxis dataKey="date" tick={{ fontSize: 10 }} />
-                <YAxis tick={{ fontSize: 10 }} width={30} />
+                <XAxis 
+                  dataKey="date" 
+                  tick={{ fontSize: 10 }} 
+                  axisLine={{ stroke: '#E2E8F0' }}
+                  tickLine={{ stroke: '#E2E8F0' }}
+                />
+                <YAxis 
+                  tick={{ fontSize: 10 }} 
+                  width={30}
+                  axisLine={{ stroke: '#E2E8F0' }}
+                  tickLine={{ stroke: '#E2E8F0' }}
+                />
                 <Tooltip content={<CustomTooltip />} />
                 <defs>
                   <linearGradient id="heartRateGradient" x1="0" y1="0" x2="0" y2="1">

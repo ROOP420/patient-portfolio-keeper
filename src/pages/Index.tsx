@@ -5,6 +5,8 @@ import PatientTimeline from '../components/PatientTimeline';
 import HealthMetrics from '../components/HealthMetrics';
 import AppointmentCard from '../components/AppointmentCard';
 import ReportGenerator from '../components/ReportGenerator';
+import MedicationTracker from '../components/MedicationTracker';
+import DoctorCard from '../components/DoctorCard';
 import { appointments, patientInfo } from '../utils/dummyData';
 import { CalendarPlus, User, FileText } from 'lucide-react';
 
@@ -107,6 +109,9 @@ const Index = () => {
               
               {/* Health Metrics */}
               <HealthMetrics />
+              
+              {/* Medication Tracker */}
+              <MedicationTracker />
             </div>
           </div>
           
@@ -114,6 +119,9 @@ const Index = () => {
             <div className="grid grid-cols-1 gap-6">
               {/* Report Generator */}
               <ReportGenerator />
+              
+              {/* Doctor Card */}
+              <DoctorCard />
               
               {/* Medical Timeline */}
               <PatientTimeline />
